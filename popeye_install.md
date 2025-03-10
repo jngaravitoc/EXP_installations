@@ -1,11 +1,13 @@
-Retrieve main branch from the GitHub repo:
+# Installation steps to install EXP in the flatiron popeye machine 
+
+### Retrieve the `main' branch from the GitHub repo:
 
 ```
 git clone https://github.com/EXP-code/EXP.git
 git submodule update --init --recursive
-'''
+```
 
-Make and move to a build location:
+### Make and move to a build location:
 
 ```
 mkdir build
