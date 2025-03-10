@@ -43,4 +43,10 @@ make -j 24
 make install 
 ```
 
+### Its always a good idea to test the installation:
+
+```
+make test
+```
+
 
