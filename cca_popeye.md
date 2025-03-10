@@ -14,7 +14,7 @@ mkdir build
 cd build
 ```
 
-### Check out a node for building
+### Check out a node for building:
 ```
 srun -p cca --nodes=1 --ntasks=16 --pty $SHELL
 ```
@@ -37,16 +37,23 @@ module load fftw/3.3.10
 ```
 cmake -DCUDA_USE_STATIC_CUDA_RUNTIME=on -DENABLE_CUDA=0 -DEigen3_DIR=$EIGEN_BASE/share/eigen3/cmake/ -DCMAKE_INSTALL_PREFIX=$HOME -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_FLAGS="-arch=compute_60 -code=sm_60,sm_70,sm_80 -std=c++17" -Wno-dev ..
 ```
-### Build & install
+### Build & install:
 ```
 make -j 24
 make install 
 ```
 
-### Its always a good idea to test the installation:
+### It is always a good idea to test the installation:
 
 ```
 make test
 ```
 
+The 18 tests ran in 79.18s.  
+To set up pyEXP include in your bashrc file the following lines:
 
+```
+export PYTHONPATH=/mnt/home/nico/lib/python3.10/sute-packages
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":/mnt/home/nico/lib
+export PATH="$PATH":/mnt/home/nico/local:/mnt/home/nico/bin
+```
