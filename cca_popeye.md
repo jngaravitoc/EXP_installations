@@ -35,7 +35,7 @@ module load fftw/3.3.10
 
 ### Configure: 
 ```
-cmake -DCUDA_USE_STATIC_CUDA_RUNTIME=off -DENABLE_CUDA=1 -DEigen3_DIR=$EIGEN_BASE/share/eigen3/cmake/ -DCMAKE_INSTALL_PREFIX=$HOME -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_FLAGS="-arch=compute_60 -code=sm_60,sm_70,sm_80 -std=c++17" -Wno-dev ..
+cmake -DCUDA_USE_STATIC_CUDA_RUNTIME=on -DENABLE_CUDA=0 -DEigen3_DIR=$EIGEN_BASE/share/eigen3/cmake/ -DCMAKE_INSTALL_PREFIX=$HOME -DCMAKE_BUILD_TYPE=Release -DCMAKE_CUDA_FLAGS="-arch=compute_60 -code=sm_60,sm_70,sm_80 -std=c++17" -Wno-dev ..
 ```
 ### Build & install
 ```
