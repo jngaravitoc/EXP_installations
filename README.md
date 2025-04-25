@@ -1,2 +1,2 @@
-# EXP_installations
-My recipes for installing EXP in different machines. 
+# EXP installations recipes
+My recipes for installing EXP on different machines. 
