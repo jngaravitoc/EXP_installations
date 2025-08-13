@@ -23,14 +23,15 @@ srun -p cca --nodes=1 --ntasks=16 --pty $SHELL
 ```
 module purge
 module load cmake/3.27.9
-module load gcc/11.4.0
+module load gcc/12.2.0
 module load openblas/threaded-0.3.26
 module load eigen/3.4.0
 module load openmpi/4.0.7
 module load hdf5/mpi-1.12.3
 module load cuda/12.3.2
-module load python/3.10.13
+module load python/3.11.7
 module load fftw/3.3.10
+module load disBatch
 ```
 
 ### Configure: 
