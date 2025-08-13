@@ -54,7 +54,7 @@ The 18 tests ran in 79.18s.
 To set up pyEXP include in your bashrc file the following lines:
 
 ```
-export PYTHONPATH=/mnt/home/nico/lib/python3.10/sute-packages
+export PYTHONPATH=/mnt/home/nico/lib/python3.11/sute-packages
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH":/mnt/home/nico/lib
 export PATH="$PATH":/mnt/home/nico/local:/mnt/home/nico/bin
 ```
