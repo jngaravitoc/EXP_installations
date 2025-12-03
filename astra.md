@@ -1,4 +1,4 @@
-# Installation steps to install EXP in the flatiron popeye machine 
+# Installation steps to install EXP in the astra UMD machine 
 
 ### Retrieve the `main' branch from the GitHub repo:
 
@@ -18,10 +18,10 @@ cd devel
 
 ### Check out a node for building:
 ```
-srun -p cca --nodes=1 --ntasks=16 --pty $SHELL
+ssh astra02
 ```
 
-###  Load the modules from modules/2.3-20240529: 
+###  Load the modules: 
 ```
 module purge
 module load openmpi/4.0.7
